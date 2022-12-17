@@ -1,3 +1,3 @@
 # rsschool-cv
-https://GITHUB-XeLaLa.github.io/rsschool-cv/cv
-https://GITHUB-XeLaLa.github.io/rsschool-cv/
+https://GITHUB-XeLaLA.github.io/rsschool-cv/cv
+https://GITHUB-XeLaLA.github.io/rsschool-cv/
