@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Unbounded&display=swap" rel="stylesheet">
+    <title>CV</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <header>
+    <figure>
+      <img class="avatar" src="avatar.jpg" alt="Аватар">
+    </figure>
+    <h1>Alexander Lagutenko</h1>
+  </header>
+  <main>
+    <nav>
+      <ul class="menu">
+        <li class="menu-item"><a href="#contacts">Contacts</a></li>
+        <li class="menu-item"><a href="#summary">Summary</a></li>
+        <li class="menu-item"><a href="#skills">Skills</a></li>
+        <li class="menu-item"><a href="#english">English</a></li>
+        <li class="menu-item"><a href="#education">Education</a></li>
+        <li class="menu-item"><a href="#code">Code</a></li>
+      </ul>
+    </nav>
+    <section id="contacts">
+      <h2>Contacts</h2>
+      <ul>
+        <li>E-mail: <a href="mailto:laxelaalexla@gmail.com">laxelaalexla@gmail.com</a></li>
+      </ul>
+    </section>
+    <section id="summary">
+      <h2>About</h2>
+      <p>
+		  I want to learn Front-End Development in RSSchool!
+      </p>
+    </section>
+    <section id="skills">
+      <h2>Work experience</h2>
+      <ul>
+        <li>Java</li>
+        <li>Maven</li>
+        <li>Spring / Spring Boot / Spting Data</li>
+      </ul>
+    </section>
+    <section id="english">
+      <h2>English</h2>
+      <p>My English level is A2.</p>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <p>Kazan state University (2003 - 2008)</p>
+    </section>
+    <section id="code">
+      <h2>Code:</h2>
+	    <p>My projects <a href="https://github.com/XeLaLA/">Github</a></p>
+        <pre>
+          <code class="language-javascript">
+public class AppController {
+    private Service employeeService;
+    private Mapper employeeMapper;
+
+    @RequestMapping(path = "/test", method = RequestMethod.GET)
+    public String test() {
+        return "Ура, работает!";
+    }
+
+    @PostMapping(path = "/add")
+    public void createEmployee(@RequestBody EmployeeDtoRq employeeDtoRq) {
+        log.info(employeeDtoRq.toString());
+        employeeService.addEmployee(employeeMapper.convertEmployeeRq(employeeDtoRq));
+    }
+    @PostMapping(path = "/del/{id}")
+    public void deleteEmployee(@PathVariable Integer id) {
+        employeeService.deleteEmployee(id);
+    }
+
+    @GetMapping(path = "/get/{id}")
+    public String getEmployeeId(@PathVariable Integer id) {
+
+        return employeeService.getEmployeeId(id);
+    }
+
+    @PostMapping(path = "/update/{id}")
+    public void updateEmployee(@PathVariable Integer id, @RequestBody EmployeeDtoRq employeeDtoRq) {
+
+        employeeService.updateEmployee(id, employeeMapper.convertEmployeeRq(employeeDtoRq));
+    }
+
+    @GetMapping(path = "/log")
+    public String getLog() {
+       return employeeService.toString();
+    }
+}
+        </code>
+      </pre>
+    </section>
+  </main>
+  <footer>
+    <div class="year">2022</div>
+    <a href="https://github.com/XeLaLA/">github</a>
+    <a href="https://rs.school/js/">
+      <figure>
+        <img class="footer-logo" src="rs_school_js.svg" alt="Логотип RS School JS">
+      </figure>
+    </a>
+  </footer>
+</body>
+
+</html>
