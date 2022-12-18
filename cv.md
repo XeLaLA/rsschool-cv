@@ -1,18 +1,15 @@
-##Alex Lagutenko##
-##Junior Frontend Developer##
-##Contact:##
+# Alex Lagutenko #
+Junior Frontend Developer
+## Contact: ##
 E-mail: laxelaalexla@gmail.com
-
-##About Myself:##
+## About Myself: ##
 I want to learn Front-End Development in RSSchool!
-
-##Work experience:##
-*Java
-*Maven
-*Spring
-*Spring Boot
-*Spting Data
-
+## Work experience: ##
+-Java
+-Maven
+-Spring
+-Spring Boot
+-Spting Data
 ## English ##
 My English level is A1.
 
